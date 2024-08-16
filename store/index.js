@@ -1,4 +1,4 @@
-import UrlStore from '~/store/UrlStore';
+import UrlStore from '~/store/urlStore';
 
 
 const modules = {

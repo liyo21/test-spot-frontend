@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  mode: 'universal',
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://test-spot-two.loc:31080/api/'

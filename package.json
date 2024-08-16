@@ -6,7 +6,6 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "node .output/server/index.mjs",
-    "generate": "nuxt generate"
     "generate": "nuxt generate",
     "test": "jest",
     "postinstall": "nuxt prepare"

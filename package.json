@@ -2,13 +2,16 @@
   "name": "test-spot-frontend",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "18.18.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "node .output/server/index.mjs",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "test": "jest",
-    "postinstall": "nuxt prepare"
+    "heroku-postbuild": "nuxt build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",

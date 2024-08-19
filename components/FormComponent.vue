@@ -41,7 +41,7 @@ export default {
     ]),
     validateUrl(url) {
       if (url.length > 5) {
-        const regex = /^(http|https):\/\/\w+\.\w+(:\d+)?(\/[\w-]+)*\/?$/;
+        const regex = /^(http|https):\/\/[\w.-]+(:\d+)?(\/[\w\-._~:\/?#\[\]@!$&'()*+,;=]*)?$/;
         this.isValidUrl = (url || '').trim().match(regex) !== null;
         this.errorMessage = 'Please, type a valid url'
       }

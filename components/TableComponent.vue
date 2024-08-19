@@ -5,7 +5,8 @@
       :fields="fields"
       :sort-by.sync="sortBy"
       :sort-desc.sync="sortDesc"
-      responsive="sm"
+      responsive="lg"
+      :tbody-td-class="w-50"
     >
       <template v-slot:cell(actions)="data">
         <b-button
@@ -37,7 +38,7 @@ export default {
       fields: [
         { key: 'id', sortable: true },
         { key: 'code', sortable: true },
-        { key: 'original_url', sortable: true },
+        { key: 'original_url', sortable: true, tdClass: 'maxThWith' },
         { key: 'actions', sortable: false }
       ],
       items: [ ]
@@ -120,7 +121,7 @@ export default {
         }
       });
       await this.getUrl()
-    }
+    },
   },
   components: { BIconArrowUpRightSquare, BIconTrashFill },
   async mounted() {
@@ -128,3 +129,9 @@ export default {
   },
 }
 </script>
+
+<style>
+  .maxThWith {
+    max-width: 200px
+  }
+</style>

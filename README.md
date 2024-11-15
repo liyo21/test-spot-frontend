@@ -7,7 +7,7 @@ Este proyecto Nuxt.js 2 se encarga de consumir una API externa para acortar URLs
 * Redirigir a la URL original a partir de la URL corta.
 * Eliminar URLs acortadas.
 
-## Requisitos previos
+## Requisitos previos:
 * **Node.js:** Versión 18.18.0 o superior.
 * **npm:** Versión 9.8.1 o superior.
 
